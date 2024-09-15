@@ -3,6 +3,7 @@ library(ggplot2)
 library(dplyr)
 library(lintr)
 library(lubridate)
+library(plotly)
 
 # Load data
 data <- read.csv("Datasets/crime_cleaned.csv")
