@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# ignore birds.csv
+Datasets/birds.csv
+Datasets/birds_cleaned.csv
+Datasets/birds_sampled.csv
+
 # ignore zip files
 *.zip
 
