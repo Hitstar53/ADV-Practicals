@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .scrolling-content {
+            display: inline-block;
+            animation: scroll 10s linear infinite;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        @keyframes scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        .kpi-box {
+            background-color: #343a40;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .chart {
+            margin-bottom: 40px;
+        }
+        .kpi-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0; /* Space around the KPI box */
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.kpi-item {
+    flex: 1; /* Allow items to take equal space */
+    margin: 0 10px; /* Space between items */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ced4da; /* Light border for definition */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffffff; /* White background for items */
+}
+
+.kpi-item strong {
+    display: block; /* Stack label and value */
+    font-size: 1.2em; /* Larger font for emphasis */
+    color: #343a40; /* Darker text color for visibility */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container dashboard">
+        <h1 class="text-center">Weather Dashboard</h1>
+        <div id="kpi-box" class="row mb-4"></div>
+        <div class="row">
+            <div class="col-md-6 graph" id="bar-chart"></div>
+            <div class="col-md-6 graph" id="pie-chart"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 graph" id="scatter-plot"></div>
+            <div class="col-md-6 graph" id="box-plot"></div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

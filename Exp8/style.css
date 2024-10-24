@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#scrolling-ticker {
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+    padding: 10px;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+}
+
+.scrolling-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.scrolling-content {
+    display: inline-block;
+    animation: scroll 6000s linear infinite; /* Set to 60 seconds for full scrolling */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#box-plot,
+#bar-chart,
+#scatter-plot,
+#pie-chart {
+    margin-top: 20px;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.2s; /* Smooth fade-in effect */
+}
