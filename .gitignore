@@ -10,6 +10,8 @@ __pycache__/
 Datasets/birds.csv
 Datasets/birds_cleaned.csv
 Datasets/birds_sampled.csv
+Datasets/bank_loans.csv
+Datasets/weather_data.csv
 
 # ignore zip files
 *.zip
