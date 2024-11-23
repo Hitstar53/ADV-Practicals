@@ -13,6 +13,10 @@ Datasets/birds_sampled.csv
 Datasets/bank_loans.csv
 Datasets/weather_data.csv
 
+# ignore node_modules
+node_modules/
+uploads/
+
 # ignore zip files
 *.zip
 
